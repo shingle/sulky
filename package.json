@@ -1,0 +1,30 @@
+{
+  "name": "sulky",
+  "version": "1.0.3",
+  "description": "SunEee FrontEnd solution",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "sulky": "bin/sulky"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shingle/sulky.git"
+  },
+  "author": "YuHui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shingle/sulky/issues"
+  },
+  "homepage": "https://github.com/shingle/sulky",
+  "dependencies": {
+    "fis": "^1.9.11",
+    "fis-parser-sass": "^0.3.5",
+    "ractive": "^0.7.2",
+    "sulky-command-server": "^1.0.0",
+    "update-notifier": "^0.3.1"
+  }
+}
