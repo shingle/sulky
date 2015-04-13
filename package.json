@@ -1,6 +1,6 @@
 {
   "name": "sulky",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "SunEee FrontEnd solution",
   "main": "index.js",
   "preferGlobal": true,
@@ -24,7 +24,7 @@
     "fis": "^1.9.11",
     "fis-parser-sass": "^0.3.5",
     "ractive": "^0.7.2",
-    "sulky-command-server": "^1.0.0",
+    "sulky-command-server": "^1.2.1",
     "update-notifier": "^0.3.1"
   }
 }
