@@ -46,7 +46,7 @@ fis.cli.info = pkg;
  * commands
  * @type {string[]}
  */
-fis.cli.help.commands = ['release', 'install', 'server'];
+fis.cli.help.commands = ['release', 'server'];
 
 
 /**
