@@ -81,14 +81,32 @@
 <ul>
 	
 	<li class="level_2">
+		<a href="#index_sulky" title="sulky">
+			sulky
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_开发环境" title="开发环境">
+			开发环境
+		</a>
+	</li>
+	
+	<li class="level_2">
 		<a href="#index_安装使用" title="安装使用">
 			安装使用
 		</a>
 	</li>
 	
 	<li class="level_2">
-		<a href="#index_注意事项" title="注意事项">
-			注意事项
+		<a href="#index_注意" title="注意">
+			注意
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_服务配置项" title="服务配置项">
+			服务配置项
 		</a>
 	</li>
 	
@@ -103,35 +121,31 @@
 						<div class="content-fix-wrap">
 							<div class="content-fix-inner" style="width: 783px;">
 
-								<h1>sulky</h1>
-<p><code>Sulky</code> 一个基于<code>fis</code>的前端构建方案</p><h2>安装使用</h2>
-<pre><code class="lang-js">
-npm install -g sulky
-</code></pre>
-<pre><code class="lang-js">
-$ sulky
-
-  Usage: sulky &lt;command&gt;
-
-  Commands:
-
-    release     build and deploy your project
-    server      launch a server
-
-  Options:
-
-    -h, --help     output usage information
-    -v, --version  output the version number
-    --no-color     disable colored output
-</code></pre>
-<h2>注意事项</h2>
+								<h2>sulky</h2>
+<p><code>Sulky</code> 一个基于<code>fis</code>的前端构建方案</p><h2>开发环境</h2>
+<ul>
+<li>node <a href="http://nodejs.org/">http://nodejs.org/</a>   </li>
+<li>git <a href="http://git-scm.com/">http://git-scm.com/</a></li>
+<li>bower <a href="http://bower.io/">http://bower.io/</a></li>
+</ul>
+<h2>安装使用</h2>
+<p><code>npm install -g sulky</code></p><p><code>sulky -v</code> 查看是否安装成功</p><h2>注意</h2>
 <ul>
 <li>使用<code>sulky</code> 时需要确保当前项目下面有<code>fis-conf.js</code>文件</li>
-<li>使用 <code>sulky release -wL</code> 监控更改并自动刷新页面,已内置对 scss 的处理</li>
-<li><code>release</code> 完成后开启本地服务器 <code>sulky server start</code> 默认使用 <code>node</code> 作为本地服务器</li>
+<li>使用 <code>sulky release</code> 把项目文件生成到临时目录下面，加上参数 <code>-h</code> 查看帮助</li>
+<li><code>release</code> 完成后开启本地服务器 <code>sulky server start</code> </li>
 <li>项目文件默认生成到 用户文件夹下面的sulky-tmp 临时目录,可以使用 <code>sulky server open</code>直接打开查看</li>
 </ul>
-
+<h2>服务配置项</h2>
+<p><code>Sulky</code> 支持<a href="https://github.com/dominictarr/rc">rc</a>格式的服务配置，该配置仅对 <code>sulky server start</code> 命令有效</p><p>在本地开发的过程中可以使用该配置来转发<code>path</code>路径下面的请求到指定地址<code>api</code>，具体可用配置项如下：</p><pre><code>{
+    &quot;port&quot;:8008,
+    &quot;host&quot;:&quot;localhost&quot;,
+    &quot;proxy&quot;:{
+        &quot;path&quot;:&quot;&quot;,
+        &quot;api&quot;:&quot;&quot;
+    }    
+}
+</code></pre><p>查看示例文件 <a href="./.sulkyrc">.sulkyrc</a></p><p>把<code>.sulkyrc</code>保存到用户目录下即可</p>
 
 							</div>
 						</div>
@@ -164,10 +178,10 @@ $ sulky
 		$('td pre').removeClass('prettyprint');
 		prettyPrint();
 
-		$(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+		$(".content").find('h2, h3, h4, h5, h6').each(function () {
 			var node = $(this);
 			// 总是设置id
-			node.attr("id", node.data('id') || "index_" + node.text());
+			node.attr("id", node.data('id') || "index_" + node.text()).addClass('content-sub-heading');
 		});
 
 

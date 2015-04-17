@@ -80,6 +80,18 @@
 								<h2 class="content-sub-heading">Links</h2>
 <ul>
 	
+	<li class="level_2">
+		<a href="#index_1.0.5" title="1.0.5">
+			1.0.5
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_1.0.0" title="1.0.0">
+			1.0.0
+		</a>
+	</li>
+	
 </ul>
 
 							</div>
@@ -91,8 +103,8 @@
 						<div class="content-fix-wrap">
 							<div class="content-fix-inner" style="width: 783px;">
 
-								<h1>1.0.5</h1>
-<p>更新server</p><h1>1.0.0</h1>
+								<h2>1.0.5</h2>
+<p>更新server</p><h2>1.0.0</h2>
 <p>在fis的基础上创建sulky</p>
 
 							</div>
@@ -126,10 +138,10 @@
 		$('td pre').removeClass('prettyprint');
 		prettyPrint();
 
-		$(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+		$(".content").find('h2, h3, h4, h5, h6').each(function () {
 			var node = $(this);
 			// 总是设置id
-			node.attr("id", node.data('id') || "index_" + node.text());
+			node.attr("id", node.data('id') || "index_" + node.text()).addClass('content-sub-heading');
 		});
 
 

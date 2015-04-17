@@ -350,10 +350,10 @@
 		$('td pre').removeClass('prettyprint');
 		prettyPrint();
 
-		$(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+		$(".content").find('h2, h3, h4, h5, h6').each(function () {
 			var node = $(this);
 			// 总是设置id
-			node.attr("id", node.data('id') || "index_" + node.text());
+			node.attr("id", node.data('id') || "index_" + node.text()).addClass('content-sub-heading');
 		});
 
 
