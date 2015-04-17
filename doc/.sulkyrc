@@ -1,8 +1,0 @@
-{
-	"port":8008,
-	"host":"localhost",
-	"proxy":{
-		"path":"",
-		"api":""
-	}
-}

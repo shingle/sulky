@@ -12,7 +12,7 @@ var gulp   = require('gulp');
 var ghPages = require('gulp-gh-pages');
 
 gulp.task('default', function() {
-	return gulp.src('./doc/**/*')
+	return gulp.src(['./doc/**/*'])
 		.pipe(ghPages());
 });
 

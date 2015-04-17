@@ -41,7 +41,7 @@
 }
 ```
 
-查看示例文件 [.sulkyrc](./.sulkyrc)
+查看示例文件 [.sulkyrc](https://github.com/shingle/sulky/blob/master/doc/.sulkyrc)
 
 把`.sulkyrc`保存到用户目录下即可
 
