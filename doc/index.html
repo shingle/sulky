@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>sulky Documentation</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1.0, width=device-width" name="viewport">
+	<meta name="keywords" content="sulky"/>
+	<meta name="description" content="SunEee FrontEnd solution"/>
+
+	<!-- css -->
+	<link href="assets/css/base.min.css" rel="stylesheet">
+	<link href="assets/css/prettyprint.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js" type="text/javascript"></script>
+	<script src="assets/js/respond.js" type="text/javascript"></script>
+	<![endif]-->
+	<script src="assets/js/prettify.js"></script>
+	<script src="assets/js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<header class="header">
+	<div class="clearfix pull-left">
+		<ul class="nav nav-list pull-left">
+			<li>
+				<a class="menu-toggle" href="#menu">
+					<span class="access-hide">Menu</span>
+					<span class="icon icon-menu"></span>
+					<span class="header-close icon icon-close"></span>
+				</a>
+			</li>
+		</ul>
+		<a class="header-logo" href="index.html">sulky</a>
+	</div>
+
+</header>
+<nav class="menu" id="menu">
+	<div class="menu-scroll">
+		<div class="menu-wrap">
+			<div class="menu-content">
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					
+
+					
+					<li>
+						<a href="./CHANGELOG.html">CHANGELOG</a>
+					</li>
+					
+					
+
+				</ul>
+
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+
+
+<div class="content">
+	<div class="content-heading">
+		<div class="container">
+			<h1 class="heading">
+				sulky
+				<small>v1.0.5 SunEee FrontEnd solution</small>
+			</h1>
+		</div>
+	</div>
+	<div class="content-inner">
+		<div class="container">
+			<div class="row row-fix">
+				<div class="col-md-3 content-fix">
+					<div class="content-fix-scroll" style="width: 815px;">
+						<div class="content-fix-wrap">
+							<div class="content-fix-inner" style="width: 783px;">
+								<h2 class="content-sub-heading">Links</h2>
+<ul>
+	
+	<li class="level_2">
+		<a href="#index_sulky" title="sulky">
+			sulky
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_开发环境" title="开发环境">
+			开发环境
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_安装使用" title="安装使用">
+			安装使用
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_注意" title="注意">
+			注意
+		</a>
+	</li>
+	
+	<li class="level_2">
+		<a href="#index_服务配置项" title="服务配置项">
+			服务配置项
+		</a>
+	</li>
+	
+</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 content-fix">
+					<div class="content-fix-scroll" style="width: 815px;">
+						<div class="content-fix-wrap">
+							<div class="content-fix-inner" style="width: 783px;">
+
+								<h2>sulky</h2>
+<p><code>Sulky</code> 一个基于<code>fis</code>的前端构建方案</p><h2>开发环境</h2>
+<ul>
+<li>node <a href="http://nodejs.org/">http://nodejs.org/</a>   </li>
+<li>git <a href="http://git-scm.com/">http://git-scm.com/</a></li>
+<li>bower <a href="http://bower.io/">http://bower.io/</a></li>
+</ul>
+<h2>安装使用</h2>
+<p><code>npm install -g sulky</code></p><p><code>sulky -v</code> 查看是否安装成功</p><h2>注意</h2>
+<ul>
+<li>使用<code>sulky</code> 时需要确保当前项目下面有<code>fis-conf.js</code>文件</li>
+<li>使用 <code>sulky release</code> 把项目文件生成到临时目录下面，加上参数 <code>-h</code> 查看帮助</li>
+<li><code>release</code> 完成后开启本地服务器 <code>sulky server start</code> </li>
+<li>项目文件默认生成到 用户文件夹下面的sulky-tmp 临时目录,可以使用 <code>sulky server open</code>直接打开查看</li>
+</ul>
+<h2>服务配置项</h2>
+<p><code>Sulky</code> 支持<a href="https://github.com/dominictarr/rc">rc</a>格式的服务配置，该配置仅对 <code>sulky server start</code> 命令有效</p><p>在本地开发的过程中可以使用该配置来转发<code>path</code>路径下面的请求到指定地址<code>api</code>，具体可用配置项如下：</p><pre><code>{
+    &quot;port&quot;:8008,
+    &quot;host&quot;:&quot;localhost&quot;,
+    &quot;proxy&quot;:{
+        &quot;path&quot;:&quot;&quot;,
+        &quot;api&quot;:&quot;&quot;
+    }    
+}
+</code></pre><p>查看示例文件 <a href="./.sulkyrc">.sulkyrc</a></p><p>把<code>.sulkyrc</code>保存到用户目录下即可</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<p>Material</p>
+	</div>
+</footer>
+<div class="fbtn-container">
+	<div class="fbtn-inner">
+		<a class="fbtn fbtn-red" href="https://github.com/shingle/sulky"><span
+					class="fbtn-text">GitHub</span><span class="fa fa-github"></span></a>
+	</div>
+</div>
+
+<script src="assets/js/base.min.js" type="text/javascript"></script>
+
+<script>
+	$(function () {
+		$('pre').addClass('prettyprint');
+		$('td pre').removeClass('prettyprint');
+		prettyPrint();
+
+		$(".content").find('h2, h3, h4, h5, h6').each(function () {
+			var node = $(this);
+			// 总是设置id
+			node.attr("id", node.data('id') || "index_" + node.text()).addClass('content-sub-heading');
+		});
+
+
+	});
+</script>
+</body>
+</html>
+

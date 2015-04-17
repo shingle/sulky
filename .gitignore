@@ -28,3 +28,7 @@ node_modules
 
 # WebStorm files
 .idea
+
+# doc
+doxmate-templates
+.publish
