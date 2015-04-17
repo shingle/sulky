@@ -15,6 +15,10 @@
 
 `sulky -v` 查看是否安装成功
 
+安装`npm`模块的过程如果时间太长的话可以使用国内的镜像安装
+
+`npm install -g sulky --registry=https://registry.npm.taobao.org`
+
 ## 注意
 
 * 使用`sulky` 时需要确保当前项目下面有`fis-conf.js`文件
