@@ -22,7 +22,10 @@
   "homepage": "https://github.com/shingle/sulky",
   "dependencies": {
     "fis": "^1.9.11",
+    "fis-packager-depscombine": "0.0.8",
     "fis-parser-sass": "^0.3.5",
+    "fis-postpackager-autoload": "0.0.20",
+    "fis-postprocessor-amd": "^0.2.16",
     "ractive": "^0.7.2",
     "sulky-command-server": "^1.3.0",
     "update-notifier": "^0.3.1"
