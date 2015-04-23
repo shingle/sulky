@@ -1,6 +1,6 @@
 {
   "name": "sulky",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "SunEee FrontEnd solution",
   "main": "index.js",
   "preferGlobal": true,
