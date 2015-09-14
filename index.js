@@ -74,9 +74,9 @@ fis.match('**/*.scss', {
 })
 
 // html minify
-.match('*.{html,jsp}', {
-	optimizer: fis.plugin('html-minifier')
-})
+//.match('*.{html,jsp}', {
+//	optimizer: fis.plugin('html-minifier')
+//})
 
 // minify sass file
 .match('*.scss', {
@@ -99,7 +99,7 @@ fis.match('**/*.scss', {
 // 默认不指定media的情况下都是dev
 fis.media('dev')
 
-.match('*', {
+.match('!*.tpl', {
 	// 不加md5
 	useHash: false,
 	// 不优化压缩
