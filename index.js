@@ -74,9 +74,9 @@ fis.match('**/*.scss', {
 })
 
 // html minify
-.match('*.{html,jsp}', {
-	optimizer: fis.plugin('html-minifier')
-})
+//.match('*.{html,jsp}', {
+//	optimizer: fis.plugin('html-minifier')
+//})
 
 // minify sass file
 .match('*.scss', {
